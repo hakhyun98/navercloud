@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Gugudan {
 	public static void main(String[] args) {
 		for (int i = 1; i < 9; i++) {
-			System.out.println((i+1) + "단");
+			System.out.println((i + 1) + "단");
 			for (int j = 1; j < 10; j++) {
-				System.out.print((i+1) + "*" + j + "=" + ((i+1) * j) + "\t");
+				System.out.print((i + 1) + "*" + j + "=" + ((i + 1) * j) + "\t");
 			}
 			System.out.println("\n***********************");
 		}
@@ -21,3 +21,5 @@ public class Gugudan {
 //			System.out.print(num + "x" + i + '=' + (num*i) + '\t');
 //		}
 //		sc.close();
+//	}
+//}
