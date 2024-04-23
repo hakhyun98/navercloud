@@ -9,6 +9,9 @@ public class Gugudan {
 			for (int j = 1; j < 10; j++) {
 				System.out.print((i + 1) + "*" + j + "=" + ((i + 1) * j) + "\t");
 			}
+			if(i == 8) {
+				break;
+			}
 			System.out.println("\n***********************");
 		}
 	}
