@@ -25,18 +25,18 @@ public class Aprac {
 			sum += people[j];
 		}
 		for (int i = 0; i < people.length - 1; i++) {
-			min = i;
-			for (int j = 0; j < people.length; j++) {
-				if (people[min] > people[j]) {
-					min = j;
-				}
-			}
-		}
-		for (int i = 0; i < people.length - 1; i++) {
 			max = i;
 			for (int j = 0; j < people.length; j++) {
 				if (people[max] < people[j]) {
 					max = j;
+				}
+			}
+		}
+		for (int i = 0; i < people.length - 1; i++) {
+			min = i;
+			for (int j = 0; j < people.length; j++) {
+				if (people[min] > people[j]) {
+					min = j;
 				}
 			}
 		}

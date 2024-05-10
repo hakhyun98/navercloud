@@ -7,7 +7,7 @@ public class Main {
 		for(int i = 0; i < inArray.length; i++) {
 			System.out.print(inArray[i] + " ");
 		}
-		System.out.println("");
+		System.out.println("\n");
 		Sort.sort(inArray);
 	}
 }
