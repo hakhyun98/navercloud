@@ -1,4 +1,4 @@
-package miniproject3;
+package Miniproject3;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -39,7 +39,7 @@ public class SmartPhone {
 					System.out.println(e.getMessage());
 					continue;
 				}
-			} else if (menuStr.equals("전화번호: ") && !checkPhone(str)) {
+			} else if (menuStr.equals("전화번호: ") && checkPhone(str)) {
 				try {
 					throw new Exception("전화번호 형식에 맞게 입력해주세요.");
 				} catch (Exception e) {
@@ -73,10 +73,8 @@ public class SmartPhone {
 	public boolean checkPhone(String phone) {
 		boolean check = true;
 		Pattern pattern = Pattern.compile("^\\d{2,3}-\\d{3,4}-\\d{4}$");
-		for (int i = 0; i < phone.length(); i++) {
-			if (!pattern.matcher(phone).find()) {
-				check = false;
-			}
+		if (pattern.matcher(phone).find()) {
+			check = false;
 		}
 		return check;
 	}
@@ -112,7 +110,6 @@ public class SmartPhone {
 			return new CustomerAddr(name, phone, email, addr, group, customerNm, product, rank);
 		}
 		return new Addr(name, phone, email, addr, group);
-
 	}
 
 	// 추가 메소드

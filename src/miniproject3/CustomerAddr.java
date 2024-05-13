@@ -1,4 +1,4 @@
-package miniproject3;
+package Miniproject3;
 
 public class CustomerAddr extends Addr{
 	public String customerNm;
